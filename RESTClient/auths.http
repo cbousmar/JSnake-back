@@ -1,0 +1,64 @@
+######### NORMAL OPERATION  ###########
+
+### Login the default admin
+POST http://localhost:3000/auths/login1
+Content-Type: application/json
+
+{
+    "username":"admin",
+    "password":"admin"
+}
+
+### Login the manager
+POST http://localhost:3000/auths/login2
+Content-Type: application/json
+
+{
+    "username":"admin",
+    "password":"admin"
+}
+
+### Create the manager user
+POST http://localhost:3000/auths/register1
+Content-Type: application/json
+
+{
+    "username":"testBestScoresss",
+    "password":"aaaa"
+}
+
+
+### Create the manager user
+POST http://localhost:3000/auths/register1
+Content-Type: application/json
+
+{
+    "username":"testBestScores",
+    "password":"aaaa",
+     "bestScoreSingle": "10",
+    "bestScoreCoop": "10"
+}
+
+### Login the manager
+POST http://localhost:3000/auths/login1
+Content-Type: application/json
+
+{
+    "username":"aaaa",
+    "password":"aaaa"
+}
+
+### Logout users
+GET http://localhost:3000/auths/logout
+Content-Type: application/json
+
+{
+}
+
+### Change key user
+PUT http://localhost:3000/auths/user/1
+Content-Type: application/json
+
+{
+    "keyUp1":"KeyY"
+}

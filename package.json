@@ -1,0 +1,32 @@
+{
+  "name": "restful-api-essentials-step8",
+  "description": "RESTful API : Sauvegarde du username et du token au sein d’un cookie côté client",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "debug": "nodemon ./bin/www",
+    "dev": "nodemon ./bin/www",
+    "start": "node ./bin/www"
+  },
+  "nodemonConfig": {
+    "ignore": [
+      "data/*"
+    ]
+  },
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "cookie-parser": "~1.4.4",
+    "cookie-session": "^1.4.0",
+    "cors": "^2.8.5",
+    "debug": "~2.6.9",
+    "escape-html": "^1.0.3",
+    "express": "~4.16.1",
+    "jsonwebtoken": "^8.5.1",
+    "morgan": "~1.9.1",
+    "nodemon": "^2.0.15"
+  },
+  "author": {
+    "name": "e-baron"
+  },
+  "license": "CC-BY-SA-4.0"
+}

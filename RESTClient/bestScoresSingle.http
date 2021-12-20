@@ -1,0 +1,29 @@
+### Read all scores
+GET http://localhost:3000/single/bestscoressingle
+
+### Read the score of the first player
+GET http://localhost:3000/single/bestscoressingle/1
+
+### Login the default admin
+POST http://localhost:3000/auths/login2
+Content-Type: application/json
+
+{
+    "username":"admin",
+    "password":"admin"
+}
+
+### Add a best score for user 1
+POST http://localhost:3000/single/bestscoressingle/
+Content-Type: application/json
+
+{
+    "score":"100",
+    "id":"1"
+}
+
+
+
+
+###
+GET http://localhost:3000/coop/bestscorescoop

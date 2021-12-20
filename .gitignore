@@ -1,0 +1,15 @@
+# ignore all node_modules folders and nested folders & files
+/node_modules/
+# ignore the specific Intellij IDEA Ultimate configuration parameter
+/.idea/
+*.iml
+# ignore the specific packages versions installed by the developper
+package-lock.json
+# ignore the development environment variables (if any)
+.env
+# ignore all the JSON data files within data directories
+**/data/*.json
+# ignore all dist directories files (and subdirectories) from .gitignore
+dist/*
+# but (re)include specific dist directory files
+!frontend-essentials/step-1/dist
